@@ -9,13 +9,6 @@ part of 'login_view_model.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$LoginViewModel on _LoginViewModelBase, Store {
-  Computed<bool>? _$isEvenComputed;
-
-  @override
-  bool get isEven => (_$isEvenComputed ??= Computed<bool>(() => super.isEven,
-          name: '_LoginViewModelBase.isEven'))
-      .value;
-
   final _$countAtom = Atom(name: '_LoginViewModelBase.count');
 
   @override
@@ -31,8 +24,34 @@ mixin _$LoginViewModel on _LoginViewModelBase, Store {
     });
   }
 
+  final _$isActiveAtom = Atom(name: '_LoginViewModelBase.isActive');
+
+  @override
+  bool get isActive {
+    _$isActiveAtom.reportRead();
+    return super.isActive;
+  }
+
+  @override
+  set isActive(bool value) {
+    _$isActiveAtom.reportWrite(value, super.isActive, () {
+      super.isActive = value;
+    });
+  }
+
   final _$_LoginViewModelBaseActionController =
       ActionController(name: '_LoginViewModelBase');
+
+  @override
+  void activeOrPassive() {
+    final _$actionInfo = _$_LoginViewModelBaseActionController.startAction(
+        name: '_LoginViewModelBase.activeOrPassive');
+    try {
+      return super.activeOrPassive();
+    } finally {
+      _$_LoginViewModelBaseActionController.endAction(_$actionInfo);
+    }
+  }
 
   @override
   void increment() {
@@ -49,7 +68,7 @@ mixin _$LoginViewModel on _LoginViewModelBase, Store {
   String toString() {
     return '''
 count: ${count},
-isEven: ${isEven}
+isActive: ${isActive}
     ''';
   }
 }

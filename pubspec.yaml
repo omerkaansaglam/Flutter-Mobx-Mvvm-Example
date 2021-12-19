@@ -30,13 +30,16 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+
   # Language
   easy_localization: ^3.0.0
+
   # State Management
   provider: ^6.0.1
   mobx: ^2.0.5
   flutter_mobx: ^2.0.2
   build_runner: ^2.1.7
+
   # Svg
   flutter_svg: ^1.0.0
   auto_size_text: ^3.0.0

@@ -8,17 +8,66 @@ class LoginView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return buildScaffold();
+  }
+
+  void othersAction(){
+     _loginViewModel.activeOrPassive();
+        _loginViewModel.increment();
+  }
+
+  Scaffold buildScaffold() {
     return Scaffold(
-      body: Center(
-        child: Observer(builder: (_) {
-          return Text(_loginViewModel.count.toString());
-        }),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          _loginViewModel.increment();
-        },
-      ),
+    appBar: buildAppbar(),
+    body: buildColumn(),
+    floatingActionButton: buildActionButton(),
+  );
+  }
+
+  FloatingActionButton buildActionButton() {
+    return FloatingActionButton(
+    child: const Icon(Icons.add),
+    onPressed: () {
+     othersAction();
+    },
+  );
+  }
+
+  Column buildColumn() {
+    return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.stretch,
+    children: [
+      Observer(builder: (_) {
+        return buildVisibilityContainer();
+      }),
+      buildCenterText(),
+    ],
+  );
+  }
+
+  Center buildCenterText() {
+    return Center(
+      child: Observer(builder: (_) {
+        return Text(_loginViewModel.count.toString());
+      }),
     );
+  }
+
+  Visibility buildVisibilityContainer() {
+    return Visibility(
+        visible: _loginViewModel.isActive,
+        child: Container(
+          height: 100,
+          width: 100,
+          color: Colors.greenAccent,
+        ),
+      );
+  }
+
+  AppBar buildAppbar() {
+    return AppBar(
+    title: const Text("Mobx Example"),
+  );
   }
 }

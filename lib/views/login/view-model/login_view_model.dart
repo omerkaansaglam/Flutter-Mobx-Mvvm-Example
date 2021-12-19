@@ -7,11 +7,17 @@ abstract class _LoginViewModelBase with Store {
   @observable
   int count = 0;
 
-  @computed
-  bool get isEven => count % 2 == 1;
+  @observable
+  bool isActive = false;
+
+  @action
+  void activeOrPassive(){
+    isActive =! isActive;
+  }
 
   @action
   void increment(){
     count++;
   }
+
 }
