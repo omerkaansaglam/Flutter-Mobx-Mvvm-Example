@@ -1,6 +1,5 @@
 # Mobx
 
-Merhabalar Mobx state yönetimi, observable, @actin,@computed,@observable gibi durumları, Lazy singleton ve Eager hakkında yapıları iyice kavramamı sağlayan projemi paylaşmak istedim. Navigation Service ile route işlemlerini rahatlıkla yapabildiğim, Proje üzerinde model sınıflarının jsonseriazable ile build_runner'ın sağlamış olduğu auto wath sayesinde
-rahatlıkla değişiklikleri compile etme şansım oldu. Bir projenin ilk aşamadan büyüme aşamasında rahatlıkla gelişmeleri yapabileceğiniz bir yapı aslında. Basic şekilde contextleri yormadan increment durumu kontrol ettim. Sizlerde bu projeyi inceleyerek faydalanabilirsiniz.
+Merhabalar, Provider ve Bloc tan sonra Mobx state yönetimi, @actin,@computed,@observable gibi durumları, Easy localization ile dil geçişleri, Multi Language mantığını, Lazy singleton ve Eager yapılarını iyice kavramamı sağlayan projemi paylaşmak istedim. Navigation Service ile route işlemlerini rahatlıkla yapabildiğim, Mvvm yapısına daha çok adapte olduğum, proje üzerinde model sınıflarının jsonseriazable ile build_runner'ın sağlamış olduğu auto wath sayesinde çok rahat bir şekilde değişiklikleri compile etme şansım oldu. Bir projenin ilk aşamadan büyüme aşamasına rahatlıkla gelişmeleri yapabileceğiniz bir yapı aslında. Basic şekilde contextleri yormadan state durumlarını kontrol ettim. Sizlerde bu projeyi inceleyerek faydalanabilirsiniz.
 # Faydalı Linkler
 https://www.youtube.com/watch?v=OxdgMVg6yl0&t=1012s
