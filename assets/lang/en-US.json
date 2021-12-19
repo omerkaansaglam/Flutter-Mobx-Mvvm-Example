@@ -1,0 +1,15 @@
+{
+    "splash" : {
+        "hello" : "Welcome to Bideks",
+        "login" : "Login",
+        "userName_Email" : "Username/Email",
+        "password" : "Password",
+        "forgot_your_password" : "Did you forget your password?",
+        "or" : "OR",
+        "checkSubscribe" : "Kampanya ve fırsatlardan haberdar olmak için Aydınlatma ve Rıza Metni kapsamında elektronik ileti almak istiyorum.",
+        "checkKvkk" : "Kişisel verileriniz, Aydınlatma ve Rıza Metni kapsamında işlenmektedir. “Üye ol” veya “Sosyal Hesap”ların butonlarından birine basarak Üyelik Sözleşmesi’ni okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.",
+        "not_member_yet" : "Not a Member Yet?",
+        "forgot_your_password_description" : "Şifre yenileme bağlantınızı alabilmek için kayıtlı email adresinizi giriniz.",
+        "sign_up" : "Sign Up"
+    }
+}
