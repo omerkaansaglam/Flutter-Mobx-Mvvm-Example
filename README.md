@@ -1,16 +1,6 @@
-# mobxexample
+# Mobx
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Merhabalar Mobx state yönetimi, observable, @actin,@computed,@observable gibi durumları, Lazy singleton ve Eager hakkında yapıları iyice kavramamı sağlayan projemi paylaşmak istedim. Navigation Service ile route işlemlerini rahatlıkla yapabildiğim, Proje üzerinde model sınıflarının jsonseriazable ile build_runner'ın sağlamış olduğu auto wath sayesinde
+rahatlıkla değişiklikleri compile etme şansım oldu. Bir projenin ilk aşamadan büyüme aşamasında rahatlıkla gelişmeleri yapabileceğiniz bir yapı aslında. Basic şekilde contextleri yormadan increment durumu kontrol ettim. Sizlerde bu projeyi inceleyerek faydalanabilirsiniz.
+# Faydalı Linkler
+https://www.youtube.com/watch?v=OxdgMVg6yl0&t=1012s
